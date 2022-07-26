@@ -1,0 +1,111 @@
+/* CUSTOM PROPS */
+
+:root{
+  --body-bg: #f1f4ff;
+  --green: #4dc490;
+  --purple: #655af2;
+  --red: #f03535;
+  --text-color: #000;
+}
+
+
+/* GLOBAL */
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+::after{
+  box-sizing: inherit;
+}
+
+
+body{
+  display: flex;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: var(--body-bg);
+}
+
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content{
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+.intro-page {
+  display: flex;
+}
+
+.hero {
+  --text-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.hero-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 55px 60px;
+  background-color: #222;
+  background-image: url(../img/Rectangle.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-badge {
+  padding: 5px 15px;
+  border: 1px solid var(--text-color);
+  margin-bottom: 60px;
+  border-radius: 41px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.hero-heading {
+  padding-right: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.hero-text {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero-bottom {
+  padding: 29px;
+  background-color: var(--green);
+  font-size: 19px;
+  text-align: center;
+}
